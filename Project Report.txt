@@ -1,0 +1,21 @@
+PROJECT REPORT
+
+1. The objective of the proejct was to get find where it pays to attend college! 
+
+2. The Project consists of 3 disparate datasets. All in csv formats. The csv files were downloaded from Kaggle.com. 
+
+3. Colleges are categorized into 5 different types. Colleges known for Engineering, Ivy League colleges, Liberal arts colleges, Party colleges & State colleges. From the dataset, it is evident that Engineering Ivy League graduates have the highest starting salary.
+
+4. Schools were gruoped into the above above categories. State schools top with 175 schools out of 269.
+
+5. Data was transformed/cleaned, columns were renamed and any null of NaN rows were dropped. 
+
+6. The 2nd dataset of college salaries by region was loaded. All irrevalent columns were dropped and all rows with null values were dropped. Columns were renamed accordingly to match previous dataset of college salaries.
+
+7. The 2 datasets, College salaries & salaries by region were merged. Another column of region was added to show which region the college falls in.  
+
+8. The college salaries by region show that California and Norrtheastn region college graduates are the highest paid. Southern a& Midwestern fared the worst.
+
+9. THe 3rd and final dataset of College tuiton was loaded, cleaned and formatted to show college tuition cost. Only colleges with a 4 year degree are considered and any colleges with a 2 year degree were dropped.
+
+10. The 2 datasets, new_salaries_region and tuition_cost_data are Loaded into the Postgresql engine using psygopg2 library in pandas. The datasets are queried into ETL Project database. The tables were created in pgAdmin directly by running create_engine library. 
